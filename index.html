@@ -37,7 +37,7 @@ main{padding:28px;min-width:0}.page-head{display:flex;justify-content:space-betw
 <div id="qtyModal" class="modal-back hidden"><div class="modal" style="width:min(400px,100%)"><div class="modal-head"><h2>Update stock quantity</h2><button class="icon-btn" id="closeQty">✕</button></div><div class="modal-body"><p id="qtyProductName" style="font-weight:700"></p><div class="field"><label>CHANGE TYPE</label><select id="qtyMode"><option value="add">Stock in (+)</option><option value="remove">Stock out (−)</option><option value="set">Set exact quantity</option></select></div><div class="field"><label>QUANTITY</label><input id="qtyAmount" type="number" min="0" step="1" value="1"></div></div><div class="modal-foot"><button class="btn ghost" id="cancelQty">Cancel</button><button class="btn" id="saveQty">Update stock</button></div></div></div>
 <div id="toast" class="toast hidden"></div>
 <script>
-const API_URL = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const API_URL = "https://script.google.com/macros/s/AKfycbxZKTptWmaMkPPy7g9O44ZoxRAwINPso5qZqe3KGXzZJnOxan-qBtS3mA3TCCLTxQEq/exec";
 let token = sessionStorage.getItem("stockToken") || "";
 let products = [], editingId = null, pendingImage = "";
 const $ = id => document.getElementById(id);
